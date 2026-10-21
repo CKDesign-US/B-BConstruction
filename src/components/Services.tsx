@@ -8,7 +8,7 @@ import {
   Check,
   type LucideIcon,
 } from 'lucide-react';
-import { SERVICES } from '@/data/site';
+import { SERVICES } from '@/site.ts';
 
 const iconMap: Record<string, LucideIcon> = {
   PaintRoller,
