@@ -1,5 +1,6 @@
-import { Phone, Mail, MapPin, HardHat, Clock } from 'lucide-react';
-import { BUSINESS, NAV_LINKS, SERVICES } from '@/site.ts';
+import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { BUSINESS, NAV_LINKS, SERVICES } from '../site.ts';
+import logoImg from '../bb.jpeg';
 
 export default function Footer() {
   return (
@@ -9,9 +10,11 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="flex items-center justify-center w-10 h-10 bg-[#EDC001] rounded-lg">
-                <HardHat className="w-6 h-6 text-black" strokeWidth={2.5} />
-              </div>
+              <img
+                src={logoImg}
+                alt="B&B Construction Logo"
+                className="w-10 h-10 object-cover rounded-lg"
+              />
               <div className="flex flex-col leading-none">
                 <span className="text-lg font-extrabold text-white">
                   B&B <span className="text-[#EDC001]">Construction</span>
@@ -111,4 +114,5 @@ export default function Footer() {
       </div>
     </footer>
   );
+}
 }
