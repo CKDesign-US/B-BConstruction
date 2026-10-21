@@ -1,5 +1,5 @@
 import { Phone, ClipboardList } from 'lucide-react';
-import { BUSINESS } from '@/data/site';
+import { BUSINESS } from '@/site.ts';
 
 export default function MobileCTABar() {
   return (
