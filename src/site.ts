@@ -2,7 +2,7 @@ export const BUSINESS = {
   name: 'B&B Construction',
   phone: '920-316-8308',
   phoneHref: 'tel:9203168308',
-  email: 'info@bbconstruction.com',
+  email: 'blakqori2008@gmail.com',
   priceRange: '$$',
   tagline: 'Quality Craftsmanship & Reliable Home Services',
 };
