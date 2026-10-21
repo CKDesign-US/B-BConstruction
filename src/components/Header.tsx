@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Phone, HardHat } from 'lucide-react';
-
+import { BUSINESS, NAV_LINKS } from '../src/site.ts';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
