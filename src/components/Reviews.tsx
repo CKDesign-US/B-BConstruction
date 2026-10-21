@@ -11,9 +11,16 @@ interface ReviewItem {
 }
 
 export default function Reviews() {
-  // Load reviews from localStorage (starts empty if none added yet)
+  // Use 'bb_user_reviews_v2' to force-clear any old cached placeholder data from previous site visits
+  const STORAGE_KEY = 'bb_user_reviews_v2';
+
   const [reviews, setReviews] = useState<ReviewItem[]>(() => {
-    const saved = localStorage.getItem('bb_user_reviews');
+    // Clear old storage key if present
+    if (localStorage.getItem('bb_user_reviews')) {
+      localStorage.removeItem('bb_user_reviews');
+    }
+
+    const saved = localStorage.getItem(STORAGE_KEY);
     if (saved) {
       try {
         return JSON.parse(saved);
@@ -21,7 +28,7 @@ export default function Reviews() {
         console.error("Failed to parse local storage reviews", e);
       }
     }
-    return []; // Empty initial list
+    return []; // Completely empty initial list
   });
 
   const [index, setIndex] = useState(0);
@@ -39,7 +46,7 @@ export default function Reviews() {
 
   // Save to localStorage whenever reviews change
   useEffect(() => {
-    localStorage.setItem('bb_user_reviews', JSON.stringify(reviews));
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(reviews));
   }, [reviews]);
 
   const go = (dir: number) => {
