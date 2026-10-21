@@ -12,7 +12,7 @@ import {
   Loader2,
   type LucideIcon,
 } from 'lucide-react';
-import { BUSINESS, SERVICES } from '@/data/site';
+import { BUSINESS, SERVICES } from '@/site.ts';
 
 type FormData = {
   name: string;
