@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { BUSINESS } from '@/src/site.ts';
+import { BUSINESS } from '@/site.ts';
 
 const schema = {
   '@context': 'https://schema.org',
