@@ -6,7 +6,7 @@ import {
   ShieldCheck,
   type LucideIcon,
 } from 'lucide-react';
-import { DIFFERENTIATORS } from '@/data/site';
+import { DIFFERENTIATORS } from '@/site.ts';
 
 const iconMap: Record<string, LucideIcon> = {
   BadgeDollarSign,
