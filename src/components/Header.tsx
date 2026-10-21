@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Phone, HardHat } from 'lucide-react';
-import { BUSINESS, NAV_LINKS } from '../site.ts';
+import { Menu, X, Phone } from 'lucide-react';
+import { BUSINESS, NAV_LINKS } from '../site';
+import logoImg from '../bb.jpeg';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -25,10 +26,12 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
-            <a href="#home" className="flex items-center gap-2 group">
-              <div className="flex items-center justify-center w-10 h-10 bg-[#EDC001] rounded-lg transition-transform group-hover:scale-105">
-                <HardHat className="w-6 h-6 text-black" strokeWidth={2.5} />
-              </div>
+            <a href="#home" className="flex items-center gap-2.5 group">
+              <img
+                src={logoImg}
+                alt="B&B Construction Logo"
+                className="w-10 h-10 object-cover rounded-lg transition-transform group-hover:scale-105"
+              />
               <div className="flex flex-col leading-none">
                 <span className="text-lg font-extrabold text-white tracking-tight">
                   B&B <span className="text-[#EDC001]">Construction</span>
@@ -102,9 +105,16 @@ export default function Header() {
               className="fixed top-0 right-0 bottom-0 w-[280px] bg-[#18181B] z-50 md:hidden flex flex-col"
             >
               <div className="flex items-center justify-between p-5 border-b border-[#27272A]">
-                <span className="font-extrabold text-white">
-                  B&B <span className="text-[#EDC001]">Construction</span>
-                </span>
+                <div className="flex items-center gap-2">
+                  <img
+                    src={logoImg}
+                    alt="B&B Construction Logo"
+                    className="w-8 h-8 object-cover rounded-md"
+                  />
+                  <span className="font-extrabold text-white">
+                    B&B <span className="text-[#EDC001]">Construction</span>
+                  </span>
+                </div>
                 <button
                   onClick={() => setOpen(false)}
                   className="w-9 h-9 flex items-center justify-center text-gray-400 hover:text-white"
