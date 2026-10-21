@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Phone, ChevronRight, ShieldCheck, BadgeDollarSign, MapPin, Star } from 'lucide-react';
-import { BUSINESS } from '@/data/site';
+import { BUSINESS } from '@/site.ts';
 
 const trustBadges = [
   { icon: ShieldCheck, label: 'Licensed & Insured' },
