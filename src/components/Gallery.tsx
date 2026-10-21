@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { GALLERY } from '@/data/site';
+import { GALLERY } from '@/site.ts';
 
 export default function Gallery() {
   return (
