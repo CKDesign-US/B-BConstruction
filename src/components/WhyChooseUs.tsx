@@ -41,9 +41,9 @@ export default function WhyChooseUs() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-gray-400 text-lg"
           >
-            For years, B&B Construction has delivered dependable, high-quality home improvement
+            B&B Construction delivers dependable, high-quality home improvement
             services to Wisconsin homeowners. We combine old-school craftsmanship with modern
-            reliability — and back every project with our satisfaction guarantee.
+            reliability, and back every project with our satisfaction guarantee.
           </motion.p>
         </div>
 
@@ -56,10 +56,10 @@ export default function WhyChooseUs() {
           className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-14"
         >
           {[
-            { stat: '500+', label: 'Projects Completed' },
+            { stat: '100+', label: 'Projects Completed' },
             { stat: '5.0', label: 'Average Star Rating' },
             { stat: '100%', label: 'Satisfaction Guarantee' },
-            { stat: '24h', label: 'Response Time' },
+            { stat: 'Fast', label: 'Response Time' },
           ].map((item) => (
             <div
               key={item.label}
