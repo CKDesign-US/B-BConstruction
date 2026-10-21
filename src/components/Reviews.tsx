@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Star, Quote, ChevronLeft, ChevronRight } from 'lucide-react';
-import { TESTIMONIALS } from '@/data/site';
+import { TESTIMONIALS } from '@/site.ts';
 
 export default function Reviews() {
   const [index, setIndex] = useState(0);
