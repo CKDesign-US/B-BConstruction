@@ -1,5 +1,5 @@
 import { Phone, Mail, MapPin, HardHat, Clock } from 'lucide-react';
-import { BUSINESS, NAV_LINKS, SERVICES } from '@/data/site';
+import { BUSINESS, NAV_LINKS, SERVICES } from '@/site.ts';
 
 export default function Footer() {
   return (
