@@ -16,6 +16,13 @@ export const NAV_LINKS = [
   { label: 'Contact', href: '#quote' },
 ];
 
+export const STATS = [
+  { stat: '100+', label: 'Projects Completed' },
+  { stat: '5.0', label: 'Average Star Rating' },
+  { stat: '100%', label: 'Satisfaction Guarantee' },
+  { stat: 'Fast', label: 'Response Time' },
+];
+
 export type Service = {
   id: string;
   icon: string;
@@ -65,59 +72,6 @@ export const SERVICES: Service[] = [
     description: 'Fast, affordable haul-away for property cleanouts, construction debris, and yard waste.',
     features: ['Property Cleanouts', 'Construction Debris Hauling', 'Yard Waste Removal'],
     image: 'https://images.pexels.com/photos/15432186/pexels-photo-15432186.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  },
-];
-
-export type Testimonial = {
-  name: string;
-  location: string;
-  rating: number;
-  quote: string;
-  service: string;
-};
-
-export const TESTIMONIALS: Testimonial[] = [
-  {
-    name: 'Sarah M.',
-    location: 'Oshkosh, WI',
-    rating: 5,
-    quote: 'B&B repainted our entire interior and the results are stunning. Clean, on time, and reasonably priced. Highly recommend!',
-    service: 'Interior Painting',
-  },
-  {
-    name: 'James T.',
-    location: 'Appleton, WI',
-    rating: 5,
-    quote: 'They finished our basement and it looks incredible. The crew was professional, respectful of our home, and finished ahead of schedule.',
-    service: 'Basement Finishing',
-  },
-  {
-    name: 'Linda K.',
-    location: 'Neenah, WI',
-    rating: 5,
-    quote: 'New hardwood floors throughout the first floor. Flawless craftsmanship and great communication from start to finish.',
-    service: 'Flooring Installation',
-  },
-  {
-    name: 'Robert D.',
-    location: 'Fond du Lac, WI',
-    rating: 5,
-    quote: 'Replaced our siding and trim after a storm. The house looks brand new. Fair pricing and excellent workmanship.',
-    service: 'Siding Replacement',
-  },
-  {
-    name: 'Emily R.',
-    location: 'Green Bay, WI',
-    rating: 5,
-    quote: 'Complete kitchen remodel and I could not be happier. They handled everything and the attention to detail was unmatched.',
-    service: 'Kitchen Remodel',
-  },
-  {
-    name: 'Michael B.',
-    location: 'Oshkosh, WI',
-    rating: 5,
-    quote: 'Quick junk removal after a garage cleanout. Same-day service, friendly crew, and the price was exactly what they quoted.',
-    service: 'Junk Removal',
   },
 ];
 
